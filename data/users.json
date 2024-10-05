@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "jerichopasco",
+    "password": "jerichopasco123",
+    "email": "jerichpasco@gmail.com"
+  },
+  {
+    "id": 2,
+    "username": "johndoe",
+    "password": "johndoe123",
+    "email": "johndoe@gmail.com"
+  },
+  {
+    "id": 3,
+    "username": "jihyopark",
+    "password": "jihyopark123",
+    "email": "jihyopark@gmail.com"
+  }
+]
