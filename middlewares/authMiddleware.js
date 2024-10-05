@@ -1,6 +1,8 @@
+//authMiddleware.js 
 const jwt = require("jsonwebtoken");
 const responses = require("../utils/responses");
 
+//Authentication Middleware to check if the user is logged in or not using JWT
 const loggedInAuth = (req, res, next) => {
   const authHeader = req.header("authorization");
   if (!authHeader) {

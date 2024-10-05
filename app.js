@@ -8,12 +8,14 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/", routes);
 
+// Default route
 app.get("/", (req, res) => {
   res.send(
     "Jericho Pasco - Backend Design Exercise: : Structuring a Node.js Application"
   );
 });
 
+// port
 const port = process.env.PORT || 5001;
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

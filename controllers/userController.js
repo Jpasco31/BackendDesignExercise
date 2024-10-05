@@ -1,3 +1,5 @@
+//userController.js
+
 require("dotenv").config();
 const responses = require("../utils/responses");
 const User = require("../models/userModel");
@@ -17,6 +19,7 @@ const loginSchema = Joi.object({
   password: Joi.string().required(),
 });
 
+//Register User Logic
 const registerUser = async (req, res) => {
   try {
     // Validate input using Joi schema
@@ -34,6 +37,7 @@ const registerUser = async (req, res) => {
   }
 };
 
+//Login User with JWT (tokens include user id, username, iat, exp)
 const loginUser = async (req, res) => {
   try {
     // Validate input using Joi schema
@@ -71,6 +75,7 @@ const loginUser = async (req, res) => {
   }
 };
 
+//Get User Profile (requires authentication)
 const getUserProfile = async (req, res) => {
   try {
     // Access req.user.username instead of req.username
@@ -86,6 +91,7 @@ const getUserProfile = async (req, res) => {
   }
 };
 
+//Get All Users
 const getAllUsers = async (req, res) => {
   try {
     const users = await User.findAll();
