@@ -8,6 +8,7 @@ This is a basic backend application built with Node.js and Express.js. It simula
 
 ## Project Structure
 
+```bash
 Project/
 ├── app.js
 ├── routes/
@@ -24,6 +25,7 @@ Project/
 │ └── responses.js
 └── data/
 └── users.json
+```
 
 ## Install dependencies
 
